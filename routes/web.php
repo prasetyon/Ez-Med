@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/admins', 'AdminController');
-
 Auth::routes();
-Route::get('/home', 'HomeController@index');
+Route::resource('home', 'HomeController');
+Route::resource('admins', 'AdminController');
+Route::resource('pharmacy', 'PharmacyController');
+Route::resource('doctor', 'DoctorController');
+Route::resource('finance', 'FinanceController');
