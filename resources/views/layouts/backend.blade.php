@@ -698,6 +698,8 @@
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="admin/plugins/morris/morris.min.js"></script>
+<!-- ChartJS 1.0.1 -->
+<script src="admin/plugins/chartjs/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="admin/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
