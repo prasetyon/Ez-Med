@@ -11,7 +11,7 @@
         </li>
           
         <li class="treeview">
-          <a href="{{ route('pharmacy.index') }}">
+          <a href="#">
             <i class="fa fa-medkit"></i>
             <span>Pharmacy</span>
             <span class="pull-right-container">
@@ -19,7 +19,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Information</a></li>
+            <li><a href="{{ route('pharmacy.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
@@ -27,7 +27,7 @@
         </li>
          
         <li class="treeview">
-          <a href="{{ route('doctor.index') }}">
+          <a href="#">
             <i class="fa fa-user-md"></i>
             <span>Doctor</span>
             <span class="pull-right-container">
@@ -35,10 +35,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Information</a></li>
+            <li><a href="{{ route('doctor.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Doctor List</a></li>
           </ul>
         </li>
            
@@ -159,7 +159,7 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>User Registrations</p>
+              <p>User Registered</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
@@ -178,7 +178,7 @@
         <!-- AREA CHART -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Area Chart of Number of Pharmacy and Doctor</h3>
+              <h3 class="box-title">Number of User, Pharmacy, and Doctor</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -315,7 +315,7 @@
         <!-- LINE CHART -->
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Line Chart of Number of Transaction</h3>
+              <h3 class="box-title">Number of Transaction</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -466,6 +466,16 @@
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(60,141,188,1)",
           data: [28, 48, 40, 19, 86, 27, 90]
+        },
+        {
+          label: "User",
+          fillColor: "rgba(220,0,0,0.9)",
+          strokeColor: "rgba(220,0,0,0.8)",
+          pointColor: "#f20000",
+          pointStrokeColor: "rgba(220,0,0,1)",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,0,0,1)",
+          data: [5, 7, 10, 14, 21, 35, 50]
         }
       ]
     };

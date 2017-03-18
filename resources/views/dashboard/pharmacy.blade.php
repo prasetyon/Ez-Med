@@ -12,7 +12,7 @@
         </li>
           
         <li class="treeview active">
-          <a href="{{ route('pharmacy.index') }}">
+          <a href="#">
             <i class="fa fa-medkit"></i>
             <span>Pharmacy</span>
             <span class="pull-right-container">
@@ -20,7 +20,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Information</a></li>
+            <li><a href="{{ route('pharmacy.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
@@ -28,7 +28,7 @@
         </li>
          
         <li class="treeview">
-          <a href="{{ route('doctor.index') }}">
+          <a href="#">
             <i class="fa fa-user-md"></i>
             <span>Doctor</span>
             <span class="pull-right-container">
@@ -36,10 +36,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Information</a></li>
+            <li><a href="{{ route('doctor.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Doctor List</a></li>
           </ul>
         </li>
            
@@ -96,12 +96,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Doctor
+        Pharmacy
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Pharmacy</li>
       </ol>
     </section>
 
