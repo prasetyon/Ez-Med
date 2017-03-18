@@ -336,71 +336,60 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li>
-          <a href="admin/pages/widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
-          </a>
-        </li>
+          
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-pie-chart"></i>
-            <span>Charts</span>
+            <i class="fa fa-medkit"></i>
+            <span>Pharmacy</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="admin/pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="admin/pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="admin/pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="admin/pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Information</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
           </ul>
         </li>
+         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>UI Elements</span>
+            <i class="fa fa-user-md"></i>
+            <span>Doctor</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="admin/pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="admin/pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="admin/pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="admin/pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="admin/pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="admin/pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Information</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
           </ul>
         </li>
+           
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-edit"></i> <span>Forms</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+            <i class="fa fa-money"></i>
+            <span>Finance</span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="admin/pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="admin/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="admin/pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-          </ul>
         </li>
+             
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+            <i class="fa"></i>
+            <span></span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="admin/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="admin/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-          </ul>
         </li>
+             
+        <li class="treeview">
+          <a href="#">
+            <i class="fa"></i>
+            <span></span>
+          </a>
+        </li>
+          
         <li>
           <a href="admin/pages/calendar.html">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
@@ -410,6 +399,7 @@
             </span>
           </a>
         </li>
+          
         <li>
           <a href="admin/pages/mailbox/mailbox.html">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
@@ -420,58 +410,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-folder"></i> <span>Examples</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="admin/pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="admin/pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="admin/pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="admin/pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="admin/pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="admin/pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="admin/pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="admin/pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="admin/pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-share"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-            <li>
-              <a href="#"><i class="fa fa-circle-o"></i> Level One
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-          </ul>
-        </li>
+        
         <li><a href="admin/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
       </ul>
     </section>
@@ -484,7 +423,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; 2017 <a href="http://almsaeedstudio.com">EZ-Life Developer Team</a>.</strong> All rights
+    <strong>Copyright &copy; 2017 <a href="#">EZ-Life Developer Team</a>.</strong> All rights
     reserved.
   </footer>
 
