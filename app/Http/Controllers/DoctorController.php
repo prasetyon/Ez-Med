@@ -12,9 +12,9 @@ class DoctorController extends Controller
         return view('dashboard/doctor');
     }
 
-    public function store()
+    public function doctorlist()
     {
-
+         return view('dashboard/doctorlist');
     }
 
     public function create()

@@ -12,9 +12,9 @@ class PharmacyController extends Controller
         return view('dashboard/pharmacy');
     }
 
-    public function store()
+    public function pharmacylist()
     {
-
+        return view('dashboard/pharmacylist');
     }
 
     public function create()
