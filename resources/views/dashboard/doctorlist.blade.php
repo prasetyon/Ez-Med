@@ -28,26 +28,29 @@
               <div class="box-body">
                   <h3> Register New Doctor</h3>
                 <div class="form-group">
-                  <label for="inputUsername">Username:</label>
-                  <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+                  <label for="inputName">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                 </div>
                 <div class="form-group">
-                  <label for="inputPassword">Password:</label>
-                  <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                  <label for="inputAddress">Address:</label>
+                  <input type="text" class="form-control" id="address" name="address" placeholder="Enter address">
                 </div>
                 <div class="form-group">
-                  <label for="inputFullName">Full Name:</label>
-                  <input type="text" class="form-control" id="fullname" name="fullname"  placeholder="Enter full name">
+                  <label for="inputPhone">Phone:</label>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
                 </div>
                 <div class="form-group">
-                  <label for="inputPhoneNumber">Phone Number:</label>
-                  <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="Enter phone number">
+                  <label for="inputPhoto">Photo:</label>
+                  <input type="image" class="form-control" id="photo" name="photo">
                 </div>
                 <div class="form-group">
-                  <label for="inputNIK">NIK:</label>
-                  <input type="text" class="form-control" id="nik" name="nik"  placeholder="Enter NIK">
+                  <label for="inputInfo">info:</label>
+                  <input type="text" class="form-control" id="info" name="info" placeholder="Enter info">
                 </div>
-                
+                <div class="form-group">
+                  <label for="inputOperational">Operational:</label>
+                  <input type="text" class="form-control" id="operational" name="operational" placeholder="Enter operational">
+                </div>
               </div>
               <!-- /.box-body -->
 
@@ -66,11 +69,13 @@
               <table id="doctor" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Username</th>
-                  <th>Password</th>
-                  <th>Full Name</th>
-                  <th>Phone Number</th>
-                  <th>NIK</th>
+                  <th>SIP</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <th>Photo</th>
+                  <th>Info</th>
+                  <th>Operational</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -89,20 +94,20 @@
 @stop
 
 <!-- jQuery 2.2.3 -->
-<script src="adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="adminlte/bootstrap/js/bootstrap.min.js"></script>
+<script src="admin/bootstrap/js/bootstrap.min.js"></script>
 <!-- DataTables -->
-<script src="adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="adminlte/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="admin/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="admin/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="adminlte/plugins/fastclick/fastclick.js"></script>
+<script src="admin/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="adminlte/dist/js/app.min.js"></script>
+<script src="admin/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="adminlte/dist/js/demo.js"></script>
+<script src="admin/dist/js/demo.js"></script>
 <!-- page script -->
 <script>
 $(function() {
