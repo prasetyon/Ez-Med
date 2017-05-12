@@ -93,6 +93,13 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
+
+        <li class="treeview">
+          <a href="">
+            <i class="fa fa-user"></i>
+            <span>User</span>
+          </a>
+        </li>
           
         <li class="treeview">
           <a href="#">
@@ -105,7 +112,6 @@
           <ul class="treeview-menu">
             <li><a href="{{ route('pharmacy.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
             <li><a href="{{ route('pharmacylist')}}"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
           </ul>
         </li>
@@ -121,7 +127,6 @@
           <ul class="treeview-menu">
             <li><a href="{{ route('doctor.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Activity</a></li>
             <li><a href="{{ route('doctorlist')}}"><i class="fa fa-circle-o"></i> Doctor List</a></li>
           </ul>
         </li>

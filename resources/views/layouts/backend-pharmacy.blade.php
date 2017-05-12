@@ -104,7 +104,7 @@
         <li class="treeview">
           <a href="">
             <i class="fa fa-money"></i>
-            <span>Transaction</span>
+            <span>Activity</span>
           </a>
         </li>  
                

@@ -14,7 +14,14 @@ class CreatePharmaciesTable extends Migration
     public function up()
     {
         Schema::create('pharmacies', function (Blueprint $table) {
-            $table->increments('id');
+            $table->string('sia', 10)->index();
+            $table->string('name', 25);
+            $table->string('owner', 30);
+            $table->string('address', 50);
+            $table->string('phone', 20);
+            $table->string('photo');
+            $table->string('info', 140);
+            $table->string('operational', 50);
             $table->timestamps();
         });
     }
