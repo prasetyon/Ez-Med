@@ -14,11 +14,11 @@ class CreateDoctorsTable extends Migration
     public function up()
     {
         Schema::create('doctors', function (Blueprint $table) {
-            $table->string('sip', 10)->index();
+            $table->increments('sip');
             $table->string('name', 25);
             $table->string('address', 50);
             $table->string('phone', 20);
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->string('info', 140);
             $table->string('operational', 50);
             $table->timestamps();

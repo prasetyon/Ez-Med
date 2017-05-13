@@ -37,42 +37,17 @@
                 </tr>
                 </thead>
                 <tbody>
+                @foreach($doctor as $doctors)
                 <tr>
-                  <td>SIP</td>
-                  <td>Name</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
+                    <td>{{$doctors->sip}}</td>
+                    <td>{{$doctors->name}}</td>
+                    <td>{{$doctors->address}}</td>
+                    <td>{{$doctors->phone}}</td>
+                    <td>{{$doctors->photo}}</td>
+                    <td>{{$doctors->info}}</td>
+                    <td>{{$doctors->operational}}</td>
                 </tr>
-                <tr>
-                  <td>SIP</td>
-                  <td>Name</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
-                </tr>
-                <tr>
-                  <td>SIP</td>
-                  <td>Name</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
-                </tr>
-                <tr>
-                  <td>SIP</td>
-                  <td>Name</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
-                </tr>
+                    @endforeach
                 </tbody>
               </table>
             </div>

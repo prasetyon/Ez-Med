@@ -23,7 +23,8 @@
             
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="" method="post">
+            <form role="form" action="{{route('doctor.store')}}" method="post">
+                {{csrf_field()}}
                 <!-- {{csrf_field()}} -->
               <div class="box-body">
                   <h3> Register New Doctor</h3>
@@ -63,7 +64,7 @@
           </section>
           
         <section class="col-lg-6">
-        <div class="box">
+        <div class="box box-primary">
             <!-- /.box-header -->
             <div class="box-body">
               <table id="doctor" class="table table-bordered table-striped">
@@ -79,13 +80,17 @@
                 </tr>
                 </thead>
                 <tbody>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
+                    @foreach($doctor as $doctors)
+                <tr>
+                    <td>{{$doctors->sip}}</td>
+                    <td>{{$doctors->name}}</td>
+                    <td>{{$doctors->address}}</td>
+                    <td>{{$doctors->phone}}</td>
+                    <td>{{$doctors->photo}}</td>
+                    <td>{{$doctors->info}}</td>
+                    <td>{{$doctors->operational}}</td>
+                </tr>
+                    @endforeach
                 </tbody>
               </table>
             </div>

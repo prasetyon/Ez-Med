@@ -38,46 +38,18 @@
                 </tr>
                 </thead>
                 <tbody>
+                    @foreach($pharmacy as $pharmacies)
                 <tr>
-                  <td>SIA</td>
-                  <td>Name</td>
-                  <td>Owner</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
+                    <td>{{$pharmacies->sia}}</td>
+                    <td>{{$pharmacies->name}}</td>
+                    <td>{{$pharmacies->owner}}</td>
+                    <td>{{$pharmacies->address}}</td>
+                    <td>{{$pharmacies->phone}}</td>
+                    <td>{{$pharmacies->photo}}</td>
+                    <td>{{$pharmacies->info}}</td>
+                    <td>{{$pharmacies->operational}}</td>
                 </tr>
-                <tr>
-                  <td>SIA</td>
-                  <td>Name</td>
-                  <td>Owner</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
-                </tr>
-                <tr>
-                  <td>SIA</td>
-                  <td>Name</td>
-                  <td>Owner</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
-                </tr>
-                <tr>
-                  <td>SIA</td>
-                  <td>Name</td>
-                  <td>Owner</td>
-                  <td>Address</td>
-                  <td>Phone</td>
-                  <td>Photo</td>
-                  <td>Info</td>
-                  <td>Operational</td>
-                </tr>
+                    @endforeach
                 </tbody>
               </table>
             </div>
