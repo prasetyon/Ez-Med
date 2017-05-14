@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Pharmacy;
+use App\Transaction;
 
 class PharmacyController extends Controller
 {
@@ -20,9 +21,10 @@ class PharmacyController extends Controller
         return view('dashboard/pharmacylist')->with('pharmacy', $pharmacy);
     }
 
-    public function create()
+    public function pharmacytransaction()
     {
-
+        $transaction = Transaction::where('SIP', null);
+        return view('dashboard/pharmacytransaction')->with('transaction', $transaction);
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Doctor;
+use App\Transaction;
 
 class DoctorController extends Controller
 {
@@ -17,12 +18,14 @@ class DoctorController extends Controller
     public function doctorlist()
     {
         $doctor=Doctor::all();
-         return view('dashboard/doctorlist')->with('doctor', $doctor);
+        return view('dashboard/doctorlist')->with('doctor', $doctor);
     }
 
-    public function create()
+    public function doctortransaction()
     {
-
+        $transaction = Transaction::whereNotNull('SIP');
+        $doctor=Doctor::all();
+        return view('dashboard/doctortransaction')->with('transaction', $transaction);
     }
 
     /**

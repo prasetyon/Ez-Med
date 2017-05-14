@@ -50,7 +50,8 @@
                 </div>
                 <div class="form-group">
                   <label for="inputPhoto">Photo:</label>
-                  <input type="image" class="form-control" id="photo" name="photo">
+                  <input type = "file" name = "photo" class = "box"/>
+                  <input type = "submit" value = "Upload"/>
                 </div>
                 <div class="form-group">
                   <label for="inputInfo">info:</label>

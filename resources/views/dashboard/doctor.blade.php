@@ -80,7 +80,7 @@
 <script>
 $(function() {
     $('#doctor').DataTable({
-          "paging": false,
+          "paging": true,
           "lengthChange": true,
           "searching": true,
           "ordering": true,

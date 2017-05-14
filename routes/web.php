@@ -27,4 +27,6 @@ Route::resource('pharmacys', 'PharmacyMainController');
 Route::resource('doctors', 'DoctorMainController');
 
 Route::any('doctorlist', ['as'=>'doctorlist', 'uses'=>'DoctorController@doctorlist']);
+Route::any('doctortransaction', ['as'=>'doctortransaction', 'uses'=>'DoctorController@doctortransaction']);
 Route::any('pharmacylist', ['as'=>'pharmacylist', 'uses'=>'PharmacyController@pharmacylist']);
+Route::any('pharmacytransaction', ['as'=>'pharmacytransaction', 'uses'=>'PharmacyController@pharmacytransaction']);

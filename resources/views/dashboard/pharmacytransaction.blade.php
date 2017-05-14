@@ -6,12 +6,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Pharmacy
+        Pharmacy Transaction
       </h1>
       <ol class="breadcrumb">
         <li><i class="fa fa-dashboard"></i> Home</li>
         <li>Pharmacy</li>
-        <li class="active">Pharmacy</li>
+        <li class="active">Pharmacy Transaction</li>
       </ol>
     </section>
 
@@ -23,31 +23,25 @@
         <div class="box box-primary">
             <!-- /.box-header -->
             <div class="box-body">
-            <h3>Pharmacy Information</h3>
+            <h3>Pharmacy Transaction</h3>
               <table id="pharmacy" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>SIA</th>
-                  <th>Name</th>
-                  <th>Owner</th>
-                  <th>Address</th>
-                  <th>Phone</th>
-                  <th>Photo</th>
-                  <th>Info</th>
-                  <th>Operational</th>
+                  <th>ID</th>
+                  <th>ID Pharmacy</th>
+                  <th>Time</th>
+                  <th>Price</th>
+                  <th>Verification</th>
                 </tr>
                 </thead>
                 <tbody>
-                    @foreach($pharmacy as $pharmacies)
+                @foreach($transaction as $transactions)
                 <tr>
-                    <td>{{$pharmacies->sia}}</td>
-                    <td>{{$pharmacies->name}}</td>
-                    <td>{{$pharmacies->owner}}</td>
-                    <td>{{$pharmacies->address}}</td>
-                    <td>{{$pharmacies->phone}}</td>
-                    <td>{{$pharmacies->photo}}</td>
-                    <td>{{$pharmacies->info}}</td>
-                    <td>{{$pharmacies->operational}}</td>
+                    <td>{{$transactions->id_transaction}}</td>
+                    <td>{{$transactions->sip}}</td>
+                    <td>{{$transactions->time}}</td>
+                    <td>{{$transactions->price}}</td>
+                    <td>{{$transactions->verification}}</td>
                 </tr>
                     @endforeach
                 </tbody>

@@ -111,7 +111,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{ route('pharmacy.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
+            <li><a href="{{ route('pharmacytransaction')}}"><i class="fa fa-circle-o"></i> Transaction</a></li>
             <li><a href="{{ route('pharmacylist')}}"><i class="fa fa-circle-o"></i> Pharmacy List</a></li>
           </ul>
         </li>
@@ -126,17 +126,19 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{ route('doctor.index') }}"><i class="fa fa-circle-o"></i> Information</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Transaction</a></li>
+            <li><a href="{{ route('doctortransaction')}}"><i class="fa fa-circle-o"></i> Transaction</a></li>
             <li><a href="{{ route('doctorlist')}}"><i class="fa fa-circle-o"></i> Doctor List</a></li>
           </ul>
         </li>
            
-        <li class="treeview">
+        <!-- <li class="treeview">
           <a href="{{ route('finance.index') }}">
             <i class="fa fa-money"></i>
             <span>Finance</span>
           </a>
-        </li> 
+        </li>  -->
+        
+        <li><a href="logout"><i class="fa fa-laptop"></i> <span>Log Out</span></a></li>
                
         <!-- <li>
           <a href="admin/pages/calendar.html">
