@@ -34,7 +34,9 @@ class PharmacyController extends Controller
     public function store(Request $request)
     {
         //
-        $pharmacy = new Pharmacy();        
+        $pharmacy = new Pharmacy();   
+        $pharmacy->username = $request->username;  
+        $pharmacy->password = $request->password;       
         $pharmacy->name = $request->name;    
         $pharmacy->owner = $request->owner;      
         $pharmacy->address = $request->address;     

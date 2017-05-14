@@ -15,6 +15,8 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->increments('sip');
+            $table->string('username', 25);
+            $table->string('password', 25);
             $table->string('name', 25);
             $table->string('address', 50);
             $table->string('phone', 20);

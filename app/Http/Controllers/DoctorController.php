@@ -34,7 +34,9 @@ class DoctorController extends Controller
     public function store(Request $request)
     {
         //
-        $doctor = new Doctor();        
+        $doctor = new Doctor();
+        $doctor->username = $request->username;  
+        $doctor->password = $request->password;          
         $doctor->name = $request->name;        
         $doctor->address = $request->address;     
         $doctor->phone = $request->phone;      

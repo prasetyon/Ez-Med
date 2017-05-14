@@ -15,6 +15,8 @@ class CreatePharmaciesTable extends Migration
     {
         Schema::create('pharmacies', function (Blueprint $table) {
             $table->increments('sia');
+            $table->string('username', 25);
+            $table->string('password', 25);
             $table->string('name', 25);
             $table->string('owner', 30);
             $table->string('address', 50);

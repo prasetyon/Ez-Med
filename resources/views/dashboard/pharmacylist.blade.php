@@ -29,6 +29,14 @@
               <div class="box-body">
                 <h3> Register New Pharmacy</h3>
                 <div class="form-group">
+                  <label for="inputUsername">Username:</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword">Password:</label>
+                  <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
                   <label for="inputName">Name:</label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                 </div>
