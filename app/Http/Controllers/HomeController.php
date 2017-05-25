@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class HomeController extends Controller
 {
@@ -11,10 +15,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -23,6 +27,29 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('auth/login');
+    }
+
+    public function loginvalidate()
+    {
+            $username=Input::get('username');
+            if($username=='admin')
+            {
+                return Redirect::to('admins');
+            }
+            else if($username=='doctor')
+            {
+                return Redirect::to('doctor');
+            }
+            else if($username=='pharmacy')
+            {
+                return Redirect::to('pharmacy');
+            }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return Redirect::to('/');
     }
 }
