@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backend-pharmacy')
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->
@@ -6,12 +6,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Doctor
+        Transaction
       </h1>
       <ol class="breadcrumb">
         <li><i class="fa fa-dashboard"></i> Home</li>
-        <li>Doctor</li>
-        <li class="active">Doctor</li>
+        <li>Pharmacy</li>
+        <li class="active">Transaction</li>
       </ol>
     </section>
 
@@ -23,29 +23,27 @@
         <div class="box box-primary">
             <!-- /.box-header -->
             <div class="box-body">
-            <h3>Doctor Information</h3>
-              <table id="doctor" class="table table-bordered table-striped">
+            <h3>Pharmacy Transaction</h3>
+              <table id="pharmacy" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>SIP</th>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <th>Phone</th>
-                  <th>Photo</th>
-                  <th>Info</th>
-                  <th>Operational</th>
+                  <th>ID</th>
+                  <th>Time</th>
+                  <th>Price</th>
+                  <th>Verification</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($doctor as $doctors)
+                @foreach($transaction as $transactions)
                 <tr>
-                    <td>{{$doctors->SIP}}</td>
-                    <td>{{$doctors->NAME}}</td>
-                    <td>{{$doctors->ADDRESS}}</td>
-                    <td>{{$doctors->PHONE}}</td>
-                    <td><img src="{{$doctors->PHOTO}}" width="150px" height="150px"></td>
-                    <td>{{$doctors->INFO}}</td>
-                    <td>{{$doctors->OPERATIONAL}}</td>
+                    <td>{{$transactions->ID_TRANSACTION}}</td>
+                    <td>{{$transactions->TIME}}</td>
+                    <td>{{$transactions->PRICE}}</td>
+                    <td>
+                    @if($transactions->VERIFICATION=='OK') OK
+                    @else <a class="btn btn-primary" type="submit" name="{{$transactions->ID_TRANSACTION}}" href="pharverify">VERIFY</a>
+                    @endif
+                    </td>
                 </tr>
                     @endforeach
                 </tbody>
@@ -79,7 +77,7 @@
 <!-- page script -->
 <script>
 $(function() {
-    $('#doctor').DataTable({
+    $('#pharmacy').DataTable({
           "paging": true,
           "lengthChange": true,
           "searching": true,

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Doctor;
-use App\Transaction;
+use App\Booking;
 
 class DoctorController extends Controller
 {
@@ -23,7 +25,7 @@ class DoctorController extends Controller
 
     public function doctortransaction()
     {
-        $transaction = Transaction::whereNotNull('SIP');
+        $transaction = Booking::all();
         $doctor=Doctor::all();
         return view('dashboard/doctortransaction')->with('transaction', $transaction);
     }
@@ -38,14 +40,13 @@ class DoctorController extends Controller
     {
         //
         $doctor = new Doctor();
-        $doctor->username = $request->username;  
-        $doctor->password = $request->password;          
-        $doctor->name = $request->name;        
-        $doctor->address = $request->address;     
-        $doctor->phone = $request->phone;      
-        $doctor->photo = $request->photo;     
-        $doctor->info = $request->info; 
-        $doctor->operational = $request->operational;    
+        $doctor->SIP = $request->sip;      
+        $doctor->NAME = $request->name;        
+        $doctor->ADDRESS = $request->address;     
+        $doctor->PHONE = $request->phone;      
+        $doctor->PHOTO = $request->photo;     
+        $doctor->INFO = $request->info; 
+        $doctor->OPERATIONAL = $request->operational;    
         $doctor->save();        
         return redirect()->route('doctorlist')
             ->with('alert-success', 'Data Berhasil Disimpan.');

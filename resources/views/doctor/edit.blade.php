@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backend-doctor')
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->
@@ -23,39 +23,39 @@
             
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="{{route('doctor.store')}}" method="post">
+            <form role="form" action="{{ route('doceditinfo') }}" method="post">
                 {{csrf_field()}}
                 <!-- {{csrf_field()}} -->
               <div class="box-body">
-                  <h3> Register New Doctor</h3>
+                  <h3> Edit Doctor Information</h3>
                 <div class="form-group">
-                  <label for="inputUsername">SIP:</label>
-                  <input type="text" class="form-control" id="sip" name="sip" placeholder="Enter SIP">
+                  <label style="font-size: 20px">SIP:</label>
+                  <label style="font-size: 20px">{{$doctor[0]->SIP}}</label>
                 </div>
                 <div class="form-group">
                   <label for="inputName">Name:</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                  <input type="text" class="form-control" id="name" name="name" value="{{ $doctor[0]->NAME }}">
                 </div>
                 <div class="form-group">
                   <label for="inputAddress">Address:</label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="Enter address">
+                  <input type="text" class="form-control" id="address" name="address" value="{{ $doctor[0]->ADDRESS }}">
                 </div>
                 <div class="form-group">
                   <label for="inputPhone">Phone:</label>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
+                  <input type="text" class="form-control" id="phone" name="phone" value="{{ $doctor[0]->PHONE }}">
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="inputPhoto">Photo:</label>
                   <input type = "file" name = "photo" class = "box"/>
                   <input type = "submit" value = "Upload"/>
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label for="inputInfo">info:</label>
-                  <input type="text" class="form-control" id="info" name="info" placeholder="Enter info">
+                  <input type="text" class="form-control" id="info" name="info" value="{{ $doctor[0]->INFO }}">
                 </div>
                 <div class="form-group">
                   <label for="inputOperational">Operational:</label>
-                  <input type="text" class="form-control" id="operational" name="operational" placeholder="Enter operational">
+                  <input type="text" class="form-control" id="operational" name="operational" value="{{ $doctor[0]->OPERATIONAL }}">
                 </div>
               </div>
               <!-- /.box-body -->
@@ -68,42 +68,6 @@
           </div>
           </section>
           
-        <section class="col-lg-6">
-        <div class="box box-primary">
-            <!-- /.box-header -->
-            <div class="box-body">
-              <label>Doctor</label>
-              <table id="doctor" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>SIP</th>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <!-- <th>Phone</th>
-                  <th>Photo</th>
-                  <th>Info</th>
-                  <th>Operational</th> -->
-                </tr>
-                </thead>
-                <tbody>
-                    @foreach($doctor as $doctors)
-                <tr>
-                    <td>{{$doctors->SIP}}</td>
-                    <td>{{$doctors->NAME}}</td>
-                    <td>{{$doctors->ADDRESS}}</td>
-                    <!-- <td>{{$doctors->PHONE}}</td>
-                    <td><img src="{{$doctors->PHOTO}}" width="150px" height="150px"></td>
-                    <td>{{$doctors->INFO}}</td>
-                    <td>{{$doctors->OPERATIONAL}}</td> -->
-                </tr>
-                    @endforeach
-                </tbody>
-              </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          </section>
-
       </div>
     </section>
   </div>

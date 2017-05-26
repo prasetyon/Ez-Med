@@ -39,11 +39,11 @@ class HomeController extends Controller
             }
             else if($username=='doctor')
             {
-                return Redirect::to('doctor');
+                return Redirect::to('doctors');
             }
             else if($username=='pharmacy')
             {
-                return Redirect::to('pharmacy');
+                return Redirect::to('pharmacys');
             }
     }
 

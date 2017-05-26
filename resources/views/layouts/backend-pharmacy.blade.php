@@ -89,24 +89,29 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
-          <a href="{{ route('admins.index') }}">
+          <a href="{{ route('pharmacys.index') }}">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
-        </li>
-                  
-        <li class="treeview">
-          <a href="">
-            <i class="fa fa-money"></i>
-            <span>Transaction</span>
           </a>
         </li>
 
         <li class="treeview">
-          <a href="">
-            <i class="fa fa-money"></i>
-            <span>Activity</span>
+          <a href="{{ route('pharedit') }}">
+            <i class="fa fa-user"></i> <span>Edit Info</span>
           </a>
-        </li>  
+        </li>
+
+        <li class="treeview">
+          <a href="{{ route('pharaddobat') }}">
+            <i class="fa fa-medkit"></i> <span>Tambah Obat</span>
+          </a>
+        </li>
+                  
+        <li class="treeview">
+          <a href="{{ route('phartransaction') }}">
+            <i class="fa fa-money"></i>
+            <span>Transaction</span>
+          </a>
+        </li>
         
         <li><a href="logout"><i class="fa fa-laptop"></i> <span>Log Out</span></a></li>
                

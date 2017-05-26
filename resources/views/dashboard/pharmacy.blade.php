@@ -40,14 +40,14 @@
                 <tbody>
                     @foreach($pharmacy as $pharmacies)
                 <tr>
-                    <td>{{$pharmacies->sia}}</td>
-                    <td>{{$pharmacies->name}}</td>
-                    <td>{{$pharmacies->owner}}</td>
-                    <td>{{$pharmacies->address}}</td>
-                    <td>{{$pharmacies->phone}}</td>
-                    <td>{{$pharmacies->photo}}</td>
-                    <td>{{$pharmacies->info}}</td>
-                    <td>{{$pharmacies->operational}}</td>
+                    <td>{{$pharmacies->SIA}}</td>
+                    <td>{{$pharmacies->NAME}}</td>
+                    <td>{{$pharmacies->OWNER}}</td>
+                    <td>{{$pharmacies->ADDRESS}}</td>
+                    <td>{{$pharmacies->PHONE}}</td>
+                    <td><img src="{{$pharmacies->PHOTO}}" width="150px" height="150px"></td>
+                    <td>{{$pharmacies->INFO}}</td>
+                    <td>{{$pharmacies->OPERATIONAL}}</td>
                 </tr>
                     @endforeach
                 </tbody>

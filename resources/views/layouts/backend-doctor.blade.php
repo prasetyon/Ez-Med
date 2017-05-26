@@ -89,24 +89,23 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
-          <a href="{{ route('admins.index') }}">
+          <a href="{{ route('doctors.index') }}">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
-        </li>
-                  
-        <li class="treeview">
-          <a href="">
-            <i class="fa fa-money"></i>
-            <span>Transaction</span>
           </a>
         </li>
 
         <li class="treeview">
-          <a href="">
-            <i class="fa fa-money"></i>
-            <span>Activity</span>
+          <a href="{{ route('docedit') }}">
+            <i class="fa fa-user"></i> <span>Edit Info</span>
           </a>
-        </li> 
+        </li>
+                  
+        <li class="treeview">
+          <a href="{{ route('doctransaction') }}">
+            <i class="fa fa-money"></i>
+            <span>Booking</span>
+          </a>
+        </li>
         
         <li><a href="logout"><i class="fa fa-laptop"></i> <span>Log Out</span></a></li>
                

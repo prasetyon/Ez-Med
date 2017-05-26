@@ -38,7 +38,7 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>30</h3>
 
               <p>Doctor Transaction</p>
             </div>
@@ -67,7 +67,7 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>24</h3>
 
               <p>Pharmacy Transaction</p>
             </div>

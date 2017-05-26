@@ -29,19 +29,19 @@
                 <tr>
                   <th>ID</th>
                   <th>ID Doctor</th>
+                  <th>Email</th>
                   <th>Time</th>
-                  <th>Price</th>
                   <th>Verification</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($transaction as $transactions)
                 <tr>
-                    <td>{{$transactions->id_transaction}}</td>
-                    <td>{{$transactions->sip}}</td>
-                    <td>{{$transactions->time}}</td>
-                    <td>{{$transactions->price}}</td>
-                    <td>{{$transactions->verification}}</td>
+                    <td>{{$transactions->ID_BOOKING}}</td>
+                    <td>{{$transactions->SIP}}</td>
+                    <td>{{$transactions->EMAIL}}</td>
+                    <td>{{$transactions->TIME}}</td>
+                    <td>{{$transactions->VERIFICATION}}</td>
                 </tr>
                     @endforeach
                 </tbody>

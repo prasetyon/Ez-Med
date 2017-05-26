@@ -37,11 +37,11 @@
                 <tbody>
                 @foreach($transaction as $transactions)
                 <tr>
-                    <td>{{$transactions->id_transaction}}</td>
-                    <td>{{$transactions->sip}}</td>
-                    <td>{{$transactions->time}}</td>
-                    <td>{{$transactions->price}}</td>
-                    <td>{{$transactions->verification}}</td>
+                    <td>{{$transactions->ID_TRANSACTION}}</td>
+                    <td>{{$transactions->SIP}}</td>
+                    <td>{{$transactions->TIME}}</td>
+                    <td>{{$transactions->PRICE}}</td>
+                    <td>{{$transactions->VERIFICATION}}</td>
                 </tr>
                     @endforeach
                 </tbody>

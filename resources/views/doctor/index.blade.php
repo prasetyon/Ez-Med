@@ -23,7 +23,7 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>5</h3>
 
               <p>TRANSACTION</p>
             </div>
@@ -38,7 +38,7 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>12</h3>
+              <h3>13</h3>
 
               <p>Doctor</p>
             </div>
@@ -53,7 +53,7 @@
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>12</h3>
+              <h3>22</h3>
 
               <p>Pharmacy</p>
             </div>

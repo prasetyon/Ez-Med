@@ -29,12 +29,8 @@
               <div class="box-body">
                 <h3> Register New Pharmacy</h3>
                 <div class="form-group">
-                  <label for="inputUsername">Username:</label>
-                  <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword">Password:</label>
-                  <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password">
+                  <label for="inputUsername">SIA:</label>
+                  <input type="text" class="form-control" id="sia" name="sia" placeholder="Enter SIA">
                 </div>
                 <div class="form-group">
                   <label for="inputName">Name:</label>
@@ -78,7 +74,6 @@
           
         <section class="col-lg-6">
         <div class="box box-primary">
-            <!-- /.box-header -->
             <div class="box-body">
               <label>Pharmacy</label>
               <table id="pharmacy" class="table table-bordered table-striped">
@@ -88,29 +83,28 @@
                   <th>Name</th>
                   <th>Owner</th>
                   <th>Address</th>
-                  <th>Phone</th>
+                  <!-- <th>Phone</th>
                   <th>Photo</th>
                   <th>Info</th>
-                  <th>Operational</th>
+                  <th>Operational</th> -->
                 </tr>
                 </thead>
                 <tbody>
                     @foreach($pharmacy as $pharmacies)
                 <tr>
-                    <td>{{$pharmacies->sia}}</td>
-                    <td>{{$pharmacies->name}}</td>
-                    <td>{{$pharmacies->owner}}</td>
-                    <td>{{$pharmacies->address}}</td>
-                    <td>{{$pharmacies->phone}}</td>
-                    <td>{{$pharmacies->photo}}</td>
-                    <td>{{$pharmacies->info}}</td>
-                    <td>{{$pharmacies->operational}}</td>
+                    <td>{{$pharmacies->SIA}}</td>
+                    <td>{{$pharmacies->NAME}}</td>
+                    <td>{{$pharmacies->OWNER}}</td>
+                    <td>{{$pharmacies->ADDRESS}}</td>
+                    <!-- <td>{{$pharmacies->PHONE}}</td>
+                    <td><img src="{{$pharmacies->PHOTO}}" width="150px" height="150px"></td>
+                    <td>{{$pharmacies->INFO}}</td>
+                    <td>{{$pharmacies->OPERATIONAL}}</td> -->
                 </tr>
                     @endforeach
                 </tbody>
               </table>
             </div>
-            <!-- /.box-body -->
           </div>
           </section>
 

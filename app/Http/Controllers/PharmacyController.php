@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Pharmacy;
 use App\Transaction;
@@ -23,7 +25,7 @@ class PharmacyController extends Controller
 
     public function pharmacytransaction()
     {
-        $transaction = Transaction::where('SIP', null);
+        $transaction = Transaction::all();
         return view('dashboard/pharmacytransaction')->with('transaction', $transaction);
     }
 
@@ -37,15 +39,14 @@ class PharmacyController extends Controller
     {
         //
         $pharmacy = new Pharmacy();   
-        $pharmacy->username = $request->username;  
-        $pharmacy->password = $request->password;       
-        $pharmacy->name = $request->name;    
-        $pharmacy->owner = $request->owner;      
-        $pharmacy->address = $request->address;     
-        $pharmacy->phone = $request->phone;      
-        $pharmacy->photo = $request->photo;     
-        $pharmacy->info = $request->info; 
-        $pharmacy->operational = $request->operational;    
+        $pharmacy->SIA = $request->sia;    
+        $pharmacy->NAME = $request->name;    
+        $pharmacy->OWNER = $request->owner;      
+        $pharmacy->ADDRESS = $request->address;     
+        $pharmacy->PHONE = $request->phone;      
+        $pharmacy->PHOTO = $request->photo;     
+        $pharmacy->INFO = $request->info; 
+        $pharmacy->OPERATIONAL = $request->operational;    
         $pharmacy->save();        
         return redirect()->route('pharmacylist')
             ->with('alert-success', 'Data Berhasil Disimpan.');

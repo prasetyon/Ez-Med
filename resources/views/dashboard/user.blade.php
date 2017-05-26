@@ -22,7 +22,7 @@
         <div class="box box-primary">
             <!-- /.box-header -->
             <div class="box-body">
-            <h3>Doctor Information</h3>
+            <h3>User Information</h3>
               <table id="doctor" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -30,17 +30,15 @@
                   <th>Name</th>
                   <th>Address</th>
                   <th>Phone</th>
-                  <th>Photo</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($user as $users)
                 <tr>
-                    <td>{{$users->email}}</td>
-                    <td>{{$users->name}}</td>
-                    <td>{{$users->address}}</td>
-                    <td>{{$users->phone}}</td>
-                    <td>{{$users->photo}}</td>
+                    <td>{{$users->EMAIL}}</td>
+                    <td>{{$users->NAME}}</td>
+                    <td>{{$users->ADDRESS}}</td>
+                    <td>{{$users->PHONE}}</td>
                 </tr>
                     @endforeach
                 </tbody>

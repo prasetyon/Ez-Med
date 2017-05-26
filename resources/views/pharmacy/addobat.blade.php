@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backend-pharmacy')
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->
@@ -6,58 +6,43 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Doctor List
+        Pharmacy List
       </h1>
       <ol class="breadcrumb">
         <li><i class="fa fa-dashboard"></i> Home</li>
-        <li>Doctor</li>
-        <li class="active">Doctor List</li>
+        <li>Pharmacy</li>
+        <li class="active">Pharmacy List</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="row">
-          <section class="col-lg-6">
+        <section class="col-lg-6">
         <div class="box box-primary">
             
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="{{route('doctor.store')}}" method="post">
+            <form role="form" action="{{ route('tambah') }}" method="post">
                 {{csrf_field()}}
-                <!-- {{csrf_field()}} -->
               <div class="box-body">
-                  <h3> Register New Doctor</h3>
+                <h3> Add Obat</h3>
                 <div class="form-group">
-                  <label for="inputUsername">SIP:</label>
-                  <input type="text" class="form-control" id="sip" name="sip" placeholder="Enter SIP">
+                  <label for="inputUsername">ID Medicine:</label>
+                  <input type="text" class="form-control" id="idmedicine" name="idmedicine" placeholder="Enter ID Medicine">
                 </div>
                 <div class="form-group">
                   <label for="inputName">Name:</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter Medicine Name">
                 </div>
                 <div class="form-group">
-                  <label for="inputAddress">Address:</label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="Enter address">
+                  <label for="inputAddress">Stock:</label>
+                  <input type="text" class="form-control" id="stock" name="stock" placeholder="Enter Medicine Stock">
                 </div>
                 <div class="form-group">
-                  <label for="inputPhone">Phone:</label>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
-                </div>
-                <div class="form-group">
-                  <label for="inputPhoto">Photo:</label>
-                  <input type = "file" name = "photo" class = "box"/>
-                  <input type = "submit" value = "Upload"/>
-                </div>
-                <div class="form-group">
-                  <label for="inputInfo">info:</label>
-                  <input type="text" class="form-control" id="info" name="info" placeholder="Enter info">
-                </div>
-                <div class="form-group">
-                  <label for="inputOperational">Operational:</label>
-                  <input type="text" class="form-control" id="operational" name="operational" placeholder="Enter operational">
-                </div>
-              </div>
+                  <label for="inputOwner">Price:</label>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="Enter Medicine Price">
+                </div>                
               <!-- /.box-body -->
 
               <div class="box-footer">
@@ -66,19 +51,19 @@
               </div>
             </form>
           </div>
-          </section>
-          
+        </section>  
+
         <section class="col-lg-6">
         <div class="box box-primary">
-            <!-- /.box-header -->
             <div class="box-body">
-              <label>Doctor</label>
-              <table id="doctor" class="table table-bordered table-striped">
+              <label>Obat</label>
+              <table id="pharmacy" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>SIP</th>
-                  <th>Name</th>
-                  <th>Address</th>
+                  <th>ID MEDICINE</th>
+                  <th>NAME</th>
+                  <th>STOCK</th>
+                  <th>PRICE</th>
                   <!-- <th>Phone</th>
                   <th>Photo</th>
                   <th>Info</th>
@@ -86,24 +71,20 @@
                 </tr>
                 </thead>
                 <tbody>
-                    @foreach($doctor as $doctors)
+                    @foreach($medicine as $medicines)
                 <tr>
-                    <td>{{$doctors->SIP}}</td>
-                    <td>{{$doctors->NAME}}</td>
-                    <td>{{$doctors->ADDRESS}}</td>
-                    <!-- <td>{{$doctors->PHONE}}</td>
-                    <td><img src="{{$doctors->PHOTO}}" width="150px" height="150px"></td>
-                    <td>{{$doctors->INFO}}</td>
-                    <td>{{$doctors->OPERATIONAL}}</td> -->
+                    <td>{{$medicines->ID_MEDICINE}}</td>
+                    <td>{{$medicines->NAME}}</td>
+                    <td>{{$medicines->STOCK}}</td>
+                    <td>{{$medicines->PRICE}}</td>                   
                 </tr>
                     @endforeach
                 </tbody>
               </table>
             </div>
-            <!-- /.box-body -->
           </div>
           </section>
-
+      
       </div>
     </section>
   </div>
@@ -128,7 +109,7 @@
 <!-- page script -->
 <script>
 $(function() {
-    $('#doctor').DataTable({
+    $('#pharmacy').DataTable({
           "paging": true,
           "lengthChange": true,
           "searching": true,
